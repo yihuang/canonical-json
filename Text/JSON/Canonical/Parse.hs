@@ -25,7 +25,7 @@ import Text.ParserCombinators.Parsec
          ( CharParser, (<|>), (<?>), many, between, sepBy
          , satisfy, char, string, digit, spaces
          , parse )
-import Text.PrettyPrint hiding (char)
+import Text.PrettyPrint hiding (char, (<>))
 import qualified Text.PrettyPrint as Doc
 #if !(MIN_VERSION_base(4,8,0))
 import Control.Applicative ((<$>), (<$), pure, (<*>), (<*), (*>))
